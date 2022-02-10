@@ -7,7 +7,79 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  width: 100%;
+  height: 100vh;
+  background-color: #121213;
+  display: flex;
+}
+
+.container {
+  width: 550px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #3a3a3c;
+}
+
+.header .menuIcon { 
+  color: #4d4d4d;
+  cursor: pointer;
+  display: flex;
+  font-size: 24px;
+  padding: 5px;
+  z-index: 20;
+}
+
+.header .left {
+  display: flex;
+  flex: 1 1;
+  padding: 4px;
+}
+
+.header .center {
+  align-items: center;
+  color: #d7dadc;
+  flex: 10 1;
+  font-size: 36px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: .2rem;
+}
+
+.header .right {
+  display: flex;
+  padding: 4px;
+  flex: 1 1;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.game {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex: 8.25 1;
+  flex-direction: column;
+}
+
+.footer {
+  color: #89898a;
+  flex: 0.25 1;
+}
+
+#comingSoon {
+  color: #d7dadc;
+}
+
+a {
+  color: #d7dadc;
 }
