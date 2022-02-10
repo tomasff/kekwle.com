@@ -2,11 +2,12 @@ import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons'
-import { faCog } from '@fortawesome/free-solid-svg-icons'
+import { faCog, faTurnDown } from '@fortawesome/free-solid-svg-icons'
 
-import kekw from './kekw.png';
+import Board from './Board';
+import Keyboard from './Keyboard';
 
-function App() {
+const App = () => {
   return (
     <div className='container'>
       <div className='header'>
@@ -25,11 +26,10 @@ function App() {
         </div>
       </div>
       <div className='game'>
-        <img src={kekw} alt='KEKW image' />
-        <h2 id='comingSoon'>Coming Soon</h2>
+        <Board word='kekw' numberOfGuesses={3} />
       </div>
       <div className='footer'>
-        Kekwle &middot; source code available on <a href='https://github.com/tomasff/kekwle.com'>GitHub</a>
+        <Keyboard letters={['k', 'e', 'w']} />
       </div>
     </div>
   );
