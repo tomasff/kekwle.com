@@ -95,6 +95,8 @@ body {
   text-transform: uppercase;
   vertical-align: middle;
   width: 6vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .key {

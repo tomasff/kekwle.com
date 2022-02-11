@@ -2,7 +2,7 @@ import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons'
-import { faCog, faTurnDown } from '@fortawesome/free-solid-svg-icons'
+import { faCog } from '@fortawesome/free-solid-svg-icons'
 
 import Board from './Board';
 import Keyboard from './Keyboard';
@@ -26,7 +26,7 @@ const App = () => {
         </div>
       </div>
       <div className='game'>
-        <Board word='kekw' numberOfGuesses={3} />
+        <Board targetWord='kekw' numberOfGuesses={3} />
       </div>
       <div className='footer'>
         <Keyboard letters={['k', 'e', 'w']} />
