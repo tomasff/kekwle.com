@@ -139,3 +139,17 @@ body {
 a {
   color: #d7dadc;
 }
+
+.boardIconTile {
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 6vh;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  padding: 1px;
+}
+
+.loadingIcon {
+  color: #4d4d4d;
+}
